@@ -147,7 +147,8 @@ echo "<p>Time taken: " . number_format($time_elapsed_secs, 2) . " seconds</p>";
 
       // GSC
 
-      include_once __DIR__ . '/php/lib/google-api-php-client/vendor/autoload.php';
+      require 'vendor/autoload.php';
+
       $data = include ('./php/data-gsc.php');
 
       $type = [ 'totals', 'qryAll' ];
@@ -342,7 +343,6 @@ function printResults($client, $q, $t) {
       <?php
       // AirTable API
 
-include_once './php/lib/airtable-php/vendor/autoload.php';
 use TANIOS\Airtable\Airtable;
 
 $config = include('./php/config-at.php');
