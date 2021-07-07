@@ -1,6 +1,6 @@
 #!/bin/sh
-mkdir ../keys/
-mkdir ../php/
+mkdir -p ../keys/
+mkdir -p ../php/
 
 gpg --quiet --batch --yes --decrypt --passphrase-file "passphrase.txt" \
 --output ../keys/secret.pem ./keys/secret.pem.gpg

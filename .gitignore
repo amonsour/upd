@@ -1,3 +1,7 @@
 
 secrets_enc/passphrase.txt
 *.txt
+*.pem
+php/config-aa.php
+php/config-at.php
+php/service-account-credentials.json
