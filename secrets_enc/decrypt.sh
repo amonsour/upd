@@ -6,7 +6,13 @@ gpg --quiet --batch --yes --decrypt --passphrase-file "passphrase.txt" \
 --output ../keys/secret.pem ./keys/secret.pem.gpg
 
 gpg --quiet --batch --yes --decrypt --passphrase-file "passphrase.txt" \
---output ../php/config-aa.php ./php/config-aa.php.gpg
+--output ../keys/secret.key ./keys/secret.key.gpg
+
+gpg --quiet --batch --yes --decrypt --passphrase-file "passphrase.txt" \
+--output ../keys/certificate.pem ./keys/certificate.pem.gpg
+
+gpg --quiet --batch --yes --decrypt --passphrase-file "passphrase.txt" \
+--output ../php/config.php ./php/config.php.gpg
 
 gpg --quiet --batch --yes --decrypt --passphrase-file "passphrase.txt" \
 --output ../php/config-at.php ./php/config-at.php.gpg
